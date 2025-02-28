@@ -1,0 +1,38 @@
+CREATE TABLE Authors (
+    AuthorID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100) NOT NULL,
+    Nationality VARCHAR(50),
+    BirthYear INT
+);
+INSERT INTO Authors (Name, Nationality, BirthYear) VALUES
+('J.K. Rowling', 'British', 1965),
+('George R.R. Martin', 'American', 1948),
+('Haruki Murakami', 'Japanese', 1949),
+('Agatha Christie', 'British', 1890),
+('Stephen King', 'American', 1947);
+
+INSERT INTO Books (ISBN, Title, Author, Genre, Quantity) VALUES
+('9780439554930', 'Harry Potter and the Sorcerer\'s Stone', 'J.K. Rowling', 'Fantasy', 10),
+('9780553103540', 'A Game of Thrones', 'George R.R. Martin', 'Fantasy', 5),
+('9780307277671', 'Norwegian Wood', 'Haruki Murakami', 'Fiction', 7),
+('9780062073488', 'Murder on the Orient Express', 'Agatha Christie', 'Mystery', 8),
+('9781501142970', 'It', 'Stephen King', 'Horror', 6),
+('9780439064873', 'Harry Potter and the Chamber of Secrets', 'J.K. Rowling', 'Fantasy', 9),
+('9780553108033', 'A Clash of Kings', 'George R.R. Martin', 'Fantasy', 4),
+('9780307387158', 'Kafka on the Shore', 'Haruki Murakami', 'Fiction', 5),
+('9780062073501', 'Death on the Nile', 'Agatha Christie', 'Mystery', 7),
+('9781501175466', 'The Shining', 'Stephen King', 'Horror', 5);
+
+INSERT INTO Members (MemberID, Name, Email, Phone) VALUES
+(1, 'John Doe', 'john.doe@example.com', '123-456-7890'),
+(2, 'Jane Smith', 'jane.smith@example.com', '234-567-8901'),
+(3, 'Alice Johnson', 'alice.johnson@example.com', '345-678-9012'),
+(4, 'Bob Brown', 'bob.brown@example.com', '456-789-0123'),
+(5, 'Charlie Davis', 'charlie.davis@example.com', '567-890-1234');
+
+INSERT INTO Loans (LoanID, MemberID, ISBN, LoanDate, ReturnDate) VALUES
+(1, 1, '9780439554930', '2025-01-01', '2025-01-15'),
+(2, 2, '9780553103540', '2025-01-05', '2025-01-20'),
+(3, 3, '9780307277671', '2025-01-10', '2025-01-25'),
+(4, 4, '9780062073488', '2025-01-15', '2025-01-30'),
+(5, 5, '9781501142970', '2025-01-20', '2025-02-04');
