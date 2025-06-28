@@ -1,1 +1,165 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Security Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+        }
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #003366;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1 1 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .gallery-images img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Super Security Solutions</h1>
+        <p>Reliable. Secure. Professional.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>Welcome to Super Security Solutions</h2>
+        <p>We provide modern security and communication solutions for businesses and homes in Addis Ababa and Ethiopia. Our mission is to deliver reliable, affordable, and high-quality security services that protect what matters most to you.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>CCTV Camera Installation</h3>
+                <p>High-definition surveillance systems for 24/7 security.</p>
+            </div>
+            <div class="service">
+                <h3>Network Installation</h3>
+                <p>Reliable wired and wireless network solutions.</p>
+            </div>
+            <div class="service">
+                <h3>Attendance Biometric Systems</h3>
+                <p>Fingerprint and facial recognition attendance systems.</p>
+            </div>
+            <div class="service">
+                <h3>PBX Phone System Setup</h3>
+                <p>Professional PBX systems for seamless communication.</p>
+            </div>
+            <div class="service">
+                <h3>Intercom Systems</h3>
+                <p>Audio/video intercom systems for secure access control.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="https://via.placeholder.com/300x200?text=CCTV+1" alt="CCTV Camera 1">
+            <img src="https://via.placeholder.com/300x200?text=CCTV+2" alt="CCTV Camera 2">
+            <img src="https://via.placeholder.com/300x200?text=CCTV+3" alt="CCTV Camera 3">
+            <img src="https://via.placeholder.com/300x200?text=Network+Setup" alt="Network Setup">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Location:</strong> Bole Wereda 6, Addis Ababa, Ethiopia</p>
+        <p><strong>General Manager:</strong> Yemaneh G/Tinsaye</p>
+        <p><strong>Phone:</strong> +251 911 446 492 | +251 976 024 402</p>
+
+        <h3>Send Us a Message</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required><br><br>
+            <input type="email" placeholder="Your Email" required><br><br>
+            <input type="tel" placeholder="Your Phone"><br><br>
+            <textarea placeholder="Your Message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Super Security Solutions | All Rights Reserved</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/supersecuritysolutions" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+            <a href="https://wa.me/251911446492" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
+            <a href="https://linkedin.com/company/supersecuritysolutions" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com/supersecuritysolutions" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
